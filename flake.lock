@@ -39,7 +39,29 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "tiddlydesktop": "tiddlydesktop"
+      }
+    },
+    "tiddlydesktop": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1720187361,
+        "narHash": "sha256-uBf3bId/Vw8JkWTPfwT9N+8V4tO03rWWqhrUDir10yk=",
+        "owner": "rdmolony",
+        "repo": "TiddlyDesktop",
+        "rev": "3e87cb807321deb808f138ebbadcde81435862ed",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rdmolony",
+        "ref": "parametrise-nixpkgs",
+        "repo": "TiddlyDesktop",
+        "type": "github"
       }
     }
   },

@@ -1,5 +1,13 @@
-{ config, pkgs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
+let
+  tiddlydesktop = pkgs.callPackage inputs.tiddlydesktop { };
+in
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -44,6 +52,7 @@
     tree
 
     brave
+    tiddlydesktop
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
