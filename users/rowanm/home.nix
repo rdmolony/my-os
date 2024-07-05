@@ -60,18 +60,9 @@
     #   org.gradle.daemon.idletimeout=3600000
     # '';
     ".bashrc".text = ''
-
       alias ehm="emacs ~/.nixos/users/rowanm/home.nix"
       alias sbrc="source ~/.bashrc"
-
-      alias hms="home-manager switch -f ~/.nixos/users/rowanm/home.nix"
-      alias nrs="sudo nixos-rebuild switch -I ~/.nixos/system/configuration.nix"
-
-      # update system channels
-      alias sncu="sudo nix-channel --update"
-      # update home-manager channels
-      alias ncu="nix-channel --update"
-    '';
+   '';
   };
 
   # Home Manager can also manage your environment variables through
