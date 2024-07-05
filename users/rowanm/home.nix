@@ -53,6 +53,7 @@ in
 
     brave
     tiddlydesktop
+    anki
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
