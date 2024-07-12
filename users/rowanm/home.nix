@@ -47,6 +47,7 @@
     git-crypt
     gnupg
     tree
+    direnv
 
     brave
     anki
