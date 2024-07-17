@@ -36,6 +36,12 @@
           ./system/configuration.nix
         ];
       };
+      framework-13 = lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./system/framework-13/configuration.nix
+        ];
+      };
     };  
   };
 }
