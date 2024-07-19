@@ -30,10 +30,10 @@
       };
     };
     nixosConfigurations = {
-      nixos = lib.nixosSystem {
+      macbook-pro = lib.nixosSystem {
         inherit system;
         modules = [
-          ./system/configuration.nix
+          ./system/macbook-pro/configuration.nix
         ];
       };
       framework-13 = lib.nixosSystem {
