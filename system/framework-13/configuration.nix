@@ -80,9 +80,8 @@
   users.users.rowanm = {
     isNormalUser = true;
     description = "Rowan Molony";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     packages = with pkgs; [
-    #  thunderbird
     ];
   };
 
@@ -95,8 +94,8 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
+    podman
+    podman-compose
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -133,4 +132,12 @@
     '';
   };
 
+  virtualisation = {
+    containers.enable = true;
+    podman = {
+      enable = true;
+      dockerCompat = true;
+      defaultNetwork.settings.dns_enabled = true;
+    };
+  };  
 }
