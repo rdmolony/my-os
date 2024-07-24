@@ -41,6 +41,7 @@
     # '')
     vim
     emacs
+    vscode
 
     git
     git-lfs
