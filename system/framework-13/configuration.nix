@@ -104,7 +104,7 @@
   # programs.gnupg.agent = {
   #   enable = true;
   #   enableSSHSupport = true;
-  # };
+  # }
 
   # List services that you want to enable:
 
@@ -139,5 +139,8 @@
       dockerCompat = true;
       defaultNetwork.settings.dns_enabled = true;
     };
-  };  
+  };
+  
+  i18n.inputMethod.enabled = "ibus";
+
 }

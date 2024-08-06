@@ -52,6 +52,8 @@
 
     brave
     anki
+    libreoffice
+    
     devenv
   ];
 
