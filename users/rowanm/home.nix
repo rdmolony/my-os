@@ -52,10 +52,12 @@ in
     tree
     direnv
     postgresWithExtensions
+    micromamba
 
     brave
     anki
     libreoffice
+    dbeaver-bin
     
     devenv
   ];
