@@ -5,8 +5,6 @@
   ...
 }:
 
-let postgresWithExtensions = pkgs.postgresql.withPackages (p: [ p.timescaledb ]);
-in
 {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
@@ -51,13 +49,10 @@ in
     gnupg
     tree
     direnv
-    postgresWithExtensions
-    micromamba
 
     brave
     anki
     libreoffice
-    dbeaver-bin
     
     devenv
   ];
