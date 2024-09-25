@@ -45,6 +45,7 @@ in
     vim
     emacs
     vscode-unstable
+    kitty
 
     git
     git-lfs
