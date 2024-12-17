@@ -53,6 +53,7 @@ in
     gnupg
     tree
     direnv
+    nix-index
 
     brave
     anki
