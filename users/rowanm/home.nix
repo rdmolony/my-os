@@ -54,6 +54,7 @@ in
     tree
     direnv
     nix-index
+    nix-init
 
     brave
     anki
