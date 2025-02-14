@@ -44,7 +44,7 @@ in
     # '')
     vim
     vscode-unstable
-    kitty
+    ghostty
 
     git
     git-lfs
