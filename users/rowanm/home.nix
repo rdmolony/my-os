@@ -43,7 +43,6 @@ in
     #   echo "Hello, ${config.home.username}!"
     # '')
     vim
-    emacs
     vscode-unstable
     kitty
 
@@ -77,7 +76,6 @@ in
     #   org.gradle.daemon.idletimeout=3600000
     # '';
     ".bashrc".text = ''
-      alias ehm="emacs ~/.nixos/users/rowanm/home.nix"
       alias sbrc="source ~/.bashrc"
    '';
   };
@@ -99,7 +97,6 @@ in
   #  /etc/profiles/per-user/rowanm/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
     BROWSER = "brave-browser";
   };
 
