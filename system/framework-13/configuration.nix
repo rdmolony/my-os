@@ -144,6 +144,6 @@
     };
   };
   
-  i18n.inputMethod.enabled = "ibus";
+  i18n.inputMethod.type.enable = "ibus";
 
 }
