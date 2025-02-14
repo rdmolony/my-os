@@ -75,9 +75,6 @@ in
     #   org.gradle.console=verbose
     #   org.gradle.daemon.idletimeout=3600000
     # '';
-    ".bashrc".text = ''
-      alias sbrc="source ~/.bashrc"
-   '';
   };
 
   # Home Manager can also manage your environment variables through
@@ -108,6 +105,16 @@ in
       enableBashIntegration = true;
       nix-direnv.enable = true;
     };
-    bash.enable = true;
+    zsh = {
+      enable = true;
+      oh-my-zsh = {
+        enable = true;
+        plugins = [ "git" ];
+        theme = "robbyrussell";
+      };
+      shellAliases = {
+        ll = "ls -l";
+      };
+    };
   };
 }
