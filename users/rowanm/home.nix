@@ -100,6 +100,7 @@ in
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
+    BROWSER = "brave-browser";
   };
 
   # Let Home Manager install and manage itself.
