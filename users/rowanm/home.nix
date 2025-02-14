@@ -46,6 +46,9 @@ in
     vscode-unstable
     ghostty
 
+    glamoroustoolkit
+    unzip
+
     git
     git-lfs
     git-crypt
