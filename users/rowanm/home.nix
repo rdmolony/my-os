@@ -2,11 +2,13 @@
   config,
   pkgs,
   inputs,
+  packages,
   ...
 }:
 
 let
   vscode-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.vscode;
+  gtoolkit = pkgs.callPackage "${packages}/gtoolkit.nix" { };
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -46,8 +48,8 @@ in
     vscode-unstable
     ghostty
 
-    glamoroustoolkit
     unzip
+    gtoolkit
 
     git
     git-lfs
@@ -97,7 +99,6 @@ in
   #  /etc/profiles/per-user/rowanm/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    BROWSER = "brave-browser";
   };
 
   # Let Home Manager install and manage itself.
