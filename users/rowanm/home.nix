@@ -9,6 +9,7 @@
 let
   vscode-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.vscode;
   gtoolkit = pkgs.callPackage "${packages}/glamorous-toolkit/gtoolkit.nix" { };
+  claude-desktop = inputs.claude-desktop.packages.${pkgs.system}.claude-desktop-with-fhs;
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -46,6 +47,7 @@ in
     # '')
     vim
     vscode-unstable
+    claude-desktop
     ghostty
 
     unzip
