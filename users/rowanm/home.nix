@@ -8,7 +8,7 @@
 
 let
   vscode-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.vscode;
-  gtoolkit = pkgs.callPackage "${packages}/gtoolkit.nix" { };
+  gtoolkit = pkgs.callPackage "${packages}/glamorous-toolkit/gtoolkit.nix" { };
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
