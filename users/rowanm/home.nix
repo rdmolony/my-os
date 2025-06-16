@@ -8,7 +8,6 @@
 
 let
   vscode-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.vscode;
-  gtoolkit = pkgs.callPackage "${packages}/glamorous-toolkit/gtoolkit.nix" { };
   claude-desktop = inputs.claude-desktop.packages.${pkgs.system}.claude-desktop-with-fhs;
 in
 {
@@ -51,7 +50,6 @@ in
     ghostty
 
     unzip
-    gtoolkit
 
     git
     git-lfs
