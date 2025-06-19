@@ -34,9 +34,9 @@
       rowanm = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
-          "${self}/users/rowanm/home.nix"
+          "${self}/home.nix"
         ];
-        extraSpecialArgs = { inherit inputs; packages="${self}/users/rowanm/packages"; }; 
+        extraSpecialArgs = { inherit inputs; }; 
       };
     };
     nixosConfigurations = {

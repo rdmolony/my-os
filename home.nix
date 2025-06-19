@@ -46,7 +46,6 @@ in
     # '')
     vim
     vscode-unstable
-    claude-desktop
     ghostty
 
     unzip
