@@ -52,6 +52,7 @@ in
     git
     git-lfs
     git-crypt
+    gh
     gnupg
     tree
     direnv
