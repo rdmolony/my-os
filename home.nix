@@ -120,6 +120,7 @@ in
       };
       shellAliases = {
         ll = "ls -l";
+        gi = "git init && git commit -m \"Initial commit\" --allow-empty && nix flake init -t templates#utils-generic && direnv allow && cat \".direnv\" > .gitignore";
       };
     };
   };
