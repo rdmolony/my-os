@@ -29,7 +29,9 @@
         modules = [
           "${self}/home.nix"
         ];
-        extraSpecialArgs = { inherit inputs; }; 
+        extraSpecialArgs = {
+          inherit inputs;
+        }; 
       };
     };
     nixosConfigurations = {

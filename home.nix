@@ -8,6 +8,7 @@
 
 let
   vscode-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.vscode;
+  claude-code-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.claude-code;
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -58,6 +59,7 @@ in
     direnv
     nix-index
     nix-init
+    claude-code-unstable
 
     brave
     anki
