@@ -7,13 +7,6 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nixpkgs-unstable.url = "github:numtide/nixpkgs-unfree/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
-    claude-desktop = {
-      url = "path:/home/rowanm/.nixos/flakes/claude-desktop";
-      inputs = {
-        flake-utils.follows = "flake-utils";
-        nixpkgs.follows = "nixpkgs";
-      };
-    };
   };
 
   outputs = {

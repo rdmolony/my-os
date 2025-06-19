@@ -1,25 +1,5 @@
 {
   "nodes": {
-    "claude-desktop": {
-      "inputs": {
-        "flake-utils": [
-          "flake-utils"
-        ],
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1750064912,
-        "narHash": "sha256-/IErOPsNfvzRP/WGP0jfM/X9Oho/ZbWBmo4ykOQS1UE=",
-        "path": "/home/rowanm/.nixos/flakes/claude-desktop",
-        "type": "path"
-      },
-      "original": {
-        "path": "/home/rowanm/.nixos/flakes/claude-desktop",
-        "type": "path"
-      }
-    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -109,7 +89,6 @@
     },
     "root": {
       "inputs": {
-        "claude-desktop": "claude-desktop",
         "flake-utils": "flake-utils",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",

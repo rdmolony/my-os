@@ -1,3 +1,0 @@
-[submodule "flakes/claude-desktop"]
-	path = flakes/claude-desktop
-	url = git@github.com:rdmolony/claude-desktop-linux-flake.git
