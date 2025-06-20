@@ -126,9 +126,9 @@ in
           nix flake init -t templates#utils-generic && \
           direnv allow && \
           echo ".direnv" > .gitignore && \
+          gh repo create --source=. --push --private && \
           git add . && \
-          git commit -m "build(nix): init" && \
-          gh repo create --source=. --push --private
+          git commit -m "build(nix): init"
         '';
       };
     };
