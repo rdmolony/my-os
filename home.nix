@@ -127,7 +127,8 @@ in
           direnv allow && \
           echo ".direnv" > .gitignore && \
           git add . && \
-          git commit -m "build(nix): init"
+          git commit -m "build(nix): init" && \
+          gh repo create --source=. --push --private
         '';
       };
     };
