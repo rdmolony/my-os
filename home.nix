@@ -9,6 +9,7 @@
 let
   vscode-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.vscode;
   claude-code-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.claude-code;
+  brave-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.brave;
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -61,7 +62,7 @@ in
     nix-init
     claude-code-unstable
 
-    brave
+    brave-unstable
     anki
     libreoffice
     
