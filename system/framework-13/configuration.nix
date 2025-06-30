@@ -78,6 +78,9 @@
 
   services.tailscale.enable = true;
 
+  # https://github.com/NixOS/nixos-hardware/tree/master/framework/13-inch/7040-amd
+  services.fwupd.enable = true;
+
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
