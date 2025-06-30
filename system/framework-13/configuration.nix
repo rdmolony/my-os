@@ -45,28 +45,10 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-# Enable AMD graphics drivers with Vulkan support
+  # Enable AMD graphics drivers with Vulkan support
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
-    # Add Vulkan drivers
-    extraPackages = with pkgs; [
-      amdvlk
-      rocmPackages.clr.icd
-      mesa
-    ];
-    # For 32-bit applications
-    extraPackages32 = with pkgs; [
-      driversi686Linux.amdvlk
-    ];
-  };
-  
-  # Graphics environment variables
-  environment.variables = {
-    LIBVA_DRIVER_NAME = "radeonsi";
-    VDPAU_DRIVER = "radeonsi";
-    # Add AMD Vulkan driver selection
-    AMD_VULKAN_ICD = "RADV";
   };
 
   # Enable the Desktop Environment.
