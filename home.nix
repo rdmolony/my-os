@@ -61,7 +61,6 @@ in
     nix-index
     nix-init
     claude-code-unstable
-    brave
     anki
     libreoffice
     tailscale
@@ -129,6 +128,18 @@ in
           git commit -m "build(nix): init"
         '';
       };
+    };
+    brave = {
+      enable = true;
+      commandLineArgs = [
+        "--disable-gpu"
+        "--disable-gpu-rasterization"
+        "--disable-gpu-compositing"
+        "--disable-software-rasterizer"
+        "--disable-background-timer-throttling"
+        "--disable-backgrounding-occluded-windows"
+        "--disable-renderer-backgrounding"
+      ];
     };
   };
 }
