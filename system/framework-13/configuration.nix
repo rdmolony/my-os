@@ -45,6 +45,12 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
+  # Enable AMD graphics drivers
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
+
   # Enable the Desktop Environment.
   services.xserver = {
     desktopManager.gnome.enable = true;
