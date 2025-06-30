@@ -132,7 +132,9 @@ in
     brave = {
       enable = true;
       commandLineArgs = [
+        "--enable-unsafe-webgpu"
       ];
     };
   };
+
 }
