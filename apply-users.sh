@@ -1,5 +1,6 @@
 #!/bin/sh
-pushd ~/.nixos
+pushd ~/NixOS
+
 nix build .#homeManagerConfigurations.rowanm.activationPackage
 ./result/activate
 rm -fr ./result
