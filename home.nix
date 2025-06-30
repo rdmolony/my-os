@@ -10,6 +10,7 @@ let
   vscode-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.vscode;
   claude-code-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.claude-code;
   brave-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.brave;
+  glamoroustoolkit-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.glamoroustoolkit;
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -47,10 +48,9 @@ in
     # '')
     vim
     vscode-unstable
+    glamoroustoolkit-unstable
     ghostty
-
     unzip
-
     git
     git-lfs
     git-crypt
@@ -61,12 +61,9 @@ in
     nix-index
     nix-init
     claude-code-unstable
-
-    brave-unstable
+    brave
     anki
     libreoffice
-    
-    devenv
     tailscale
   ];
 
