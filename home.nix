@@ -132,13 +132,6 @@ in
     brave = {
       enable = true;
       commandLineArgs = [
-        "--disable-gpu"
-        "--disable-gpu-rasterization"
-        "--disable-gpu-compositing"
-        "--disable-software-rasterizer"
-        "--disable-background-timer-throttling"
-        "--disable-backgrounding-occluded-windows"
-        "--disable-renderer-backgrounding"
       ];
     };
   };
