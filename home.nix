@@ -132,7 +132,10 @@ in
     brave = {
       enable = true;
       commandLineArgs = [
-        "--enable-unsafe-webgpu"
+        "--disable-gpu"
+        "--disable-gpu-compositing"
+        "--disable-software-rasterizer"
+        "--disable-webgl"
       ];
     };
   };
