@@ -46,24 +46,17 @@ in
     # (pkgs.writeShellScriptBin "my-hello" ''
     #   echo "Hello, ${config.home.username}!"
     # '')
-    vim
     vscode-unstable
-    glamoroustoolkit-unstable
     ghostty
     unzip
     git
     git-lfs
     git-crypt
     gh
-    gnupg
     tree
     direnv
-    nix-index
-    nix-init
     claude-code-unstable
-    anki
     libreoffice
-    tailscale
     glxinfo
     inputs.my-pomodoro.packages.${pkgs.system}.default
   ];
