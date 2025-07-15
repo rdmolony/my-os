@@ -8,6 +8,7 @@
     nixpkgs-unstable.url = "github:numtide/nixpkgs-unfree/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    my-pomodoro.url = "git+ssh://git@github.com/rdmolony/my-pomodoro";
   };
 
   outputs = {

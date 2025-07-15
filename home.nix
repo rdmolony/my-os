@@ -65,6 +65,7 @@ in
     libreoffice
     tailscale
     glxinfo
+    inputs.my-pomodoro.packages.${pkgs.system}.default
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -128,7 +129,7 @@ in
           git add . && \
           git commit -m "build(nix): init"
         '';
-        cc = "firejail claude";
+        cc = "firejail claude \"$@\"";
       };
     };
     brave = {
