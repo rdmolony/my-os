@@ -128,6 +128,7 @@ in
           git add . && \
           git commit -m "build(nix): init"
         '';
+        cc = "firejail claude";
       };
     };
     brave = {
