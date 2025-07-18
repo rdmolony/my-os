@@ -149,10 +149,14 @@
     '';
   };
 
-  virtualisation = {
-    containers.enable = true;
+  virtualisation.docker = {
+    enable = true;
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
   };
-  
+
   i18n.inputMethod.type.enable = "ibus";
 
 }

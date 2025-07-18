@@ -93,6 +93,7 @@ in
   #  /etc/profiles/per-user/rowanm/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
+    DOCKER_HOST = "unix:///run/user/1000/docker.sock";
   };
 
   # Let Home Manager install and manage itself.
