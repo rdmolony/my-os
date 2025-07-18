@@ -111,8 +111,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    podman
-    podman-compose
+    docker
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -152,11 +151,6 @@
 
   virtualisation = {
     containers.enable = true;
-    podman = {
-      enable = true;
-      dockerCompat = true;
-      defaultNetwork.settings.dns_enabled = true;
-    };
   };
   
   i18n.inputMethod.type.enable = "ibus";
