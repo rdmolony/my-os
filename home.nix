@@ -11,6 +11,7 @@ let
   claude-code-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.claude-code;
   brave-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.brave;
   glamoroustoolkit-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.glamoroustoolkit;
+  pomodoro-timer = inputs.pomodoro-timer.packages.${pkgs.system}.default;
 in
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -58,7 +59,7 @@ in
     claude-code-unstable
     libreoffice
     glxinfo
-    inputs.my-pomodoro.packages.${pkgs.system}.default
+    pomodoro-timer
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

@@ -8,7 +8,11 @@
     nixpkgs-unstable.url = "github:numtide/nixpkgs-unfree/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-    my-pomodoro.url = "git+ssh://git@github.com/rdmolony/my-pomodoro";
+    pomodoro-timer = {
+      url = "git+ssh://git@github.com/rdmolony/pomodoro-timer?dir=vala";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-utils.follows = "flake-utils";
+    };
   };
 
   outputs = {
