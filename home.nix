@@ -8,7 +8,6 @@
 
 let
   vscode-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.vscode;
-  claude-code-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.claude-code;
   brave-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.brave;
   glamoroustoolkit-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.glamoroustoolkit;
   pomodoro-timer = inputs.pomodoro-timer.packages.${pkgs.system}.default;
@@ -56,7 +55,6 @@ in
     gh
     tree
     direnv
-    claude-code-unstable
     libreoffice
     glxinfo
     pomodoro-timer
