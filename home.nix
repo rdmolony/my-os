@@ -127,10 +127,7 @@ in
         cc = "firejail claude \"$@\"";
       };
       initContent = ''
-        # Load environment variables from .secrets directory
-        if [ -d "$HOME/.secrets" ]; then
-          export GITHUB_PERSONAL_ACCESS_TOKEN=$(cat "$HOME/.secrets/github.txt")
-        fi
+        # Run arbitrary commands in the .envrc before startup
       '';
     };
     brave = {
