@@ -129,7 +129,7 @@ in
       initContent = ''
         # Load environment variables from .secrets directory
         if [ -d "$HOME/.secrets" ]; then
-          export GITHUB_PAT=$(cat "$HOME/.secrets/github.txt")
+          export GITHUB_PERSONAL_ACCESS_TOKEN=$(cat "$HOME/.secrets/github.txt")
         fi
       '';
     };
