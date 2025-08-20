@@ -126,6 +126,12 @@ in
         '';
         cc = "firejail claude \"$@\"";
       };
+      initContent = ''
+        # Load environment variables from .secrets directory
+        if [ -d "$HOME/.secrets" ]; then
+          export GITHUB_PAT=$(cat "$HOME/.secrets/github.txt")
+        fi
+      '';
     };
     brave = {
       enable = true;
