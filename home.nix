@@ -97,6 +97,7 @@ in
   #
   home.sessionVariables = {
     DOCKER_HOST = "unix:///run/user/1000/docker.sock";
+    NIXOS_OZONE_WL = "1";
   };
 
   # Let Home Manager install and manage itself.
@@ -136,6 +137,7 @@ in
       enable = true;
       commandLineArgs = [
         "--ozone-platform=wayland"
+        "--enable-unsafe-webgpu"
       ];
     };
   };
