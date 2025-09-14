@@ -132,6 +132,12 @@ in
         # Run arbitrary commands in the .envrc before startup
       '';
     };
+    brave = {
+      enable = true;
+      commandLineArgs = [
+        "--ozone-platform=wayland"
+      ];
+    };
   };
 
 }
