@@ -8,7 +8,6 @@
 
 let
   vscode-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.vscode;
-  brave-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.brave;
   glamoroustoolkit-unstable = inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.glamoroustoolkit;
   pomodoro-timer = inputs.pomodoro-timer.packages.${pkgs.system}.default;
 in
@@ -132,15 +131,6 @@ in
       initContent = ''
         # Run arbitrary commands in the .envrc before startup
       '';
-    };
-    brave = {
-      enable = true;
-      commandLineArgs = [
-        "--disable-gpu"
-        "--disable-gpu-compositing"
-        "--disable-software-rasterizer"
-        "--disable-webgl"
-      ];
     };
   };
 
