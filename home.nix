@@ -63,6 +63,10 @@ in
     restream
     anki
     tlaplusToolbox
+    python3
+    uv
+    nodejs
+    typescript
   ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
