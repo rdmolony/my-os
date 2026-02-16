@@ -160,4 +160,6 @@
 
   i18n.inputMethod.type.enable = "ibus";
 
+  programs.nix-ld.enable = true;
+
 }
