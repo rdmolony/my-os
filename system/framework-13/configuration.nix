@@ -50,7 +50,7 @@
   };
 
   # Enable the Desktop Environment.
-  services.xserver = {
+  services = {
     desktopManager.gnome.enable = true;
     displayManager.gdm.enable = true;
   };
@@ -158,7 +158,7 @@
     };
   }; 
 
-  i18n.inputMethod.type.enable = "ibus";
+  i18n.inputMethod.type = "ibus";
 
   programs.nix-ld.enable = true;
 
