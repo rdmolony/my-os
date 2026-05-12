@@ -55,7 +55,6 @@ in
     tree
     direnv
     libreoffice
-    glxinfo
     pomodoro-timer
     spotify
     calibre

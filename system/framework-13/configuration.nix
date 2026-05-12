@@ -93,7 +93,7 @@
     isNormalUser = true;
     shell = pkgs.zsh;
     description = "Rowan Molony";
-    extraGroups = [ "networkmanager" "wheel" "docker" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "nordvpn" ];
     packages = with pkgs; [
     ];
   };
@@ -125,6 +125,7 @@
   # List services that you want to enable:
 
   services.tailscale.enable = true;
+  services.nordvpn.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
@@ -134,6 +135,13 @@
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
+
+  # Essential firewall settings for NordVPN to function properly
+  networking.firewall = {
+    checkReversePath = false; # Required to prevent packet dropping
+    allowedTCPPorts = [ 443 ]; 
+    allowedUDPPorts = [ 1194 ];
+  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
