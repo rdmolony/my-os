@@ -125,7 +125,6 @@
   # List services that you want to enable:
 
   services.tailscale.enable = true;
-  services.nordvpn.enable = true;
 
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
