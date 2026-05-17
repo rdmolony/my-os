@@ -47,21 +47,14 @@ in
     # '')
     vscode-unstable
     ghostty
+    brave
     unzip
     git
-    git-lfs
-    git-crypt
     gh
     tree
     direnv
     libreoffice
-    pomodoro-timer
-    spotify
-    calibre
     nodejs
-    restream
-    anki
-    tlaplusToolbox
     python3
     uv
     nodejs
@@ -136,13 +129,6 @@ in
       initContent = ''
         # Run arbitrary commands in the .envrc before startup
       '';
-    };
-    brave = {
-      enable = true;
-      commandLineArgs = [
-        "--ozone-platform=wayland"
-        "--enable-unsafe-webgpu"
-      ];
     };
   };
 
