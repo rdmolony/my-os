@@ -51,8 +51,8 @@
 
   # Enable the Desktop Environment.
   services = {
-    desktopManager.gnome.enable = true;
-    displayManager.gdm.enable = true;
+    desktopManager.cosmic.enable = true;
+    displayManager.cosmic-greeter.enable = true;
   };
 
   # Configure keymap in X11
