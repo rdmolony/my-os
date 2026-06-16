@@ -2,8 +2,8 @@
   description = "Rowan Molony's NixOs Configuration";
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-25.11";
-    home-manager.url = "github:nix-community/home-manager/release-25.11";
+    nixpkgs.url = "nixpkgs/nixos-26.05";
+    home-manager.url = "github:nix-community/home-manager/release-26.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nixpkgs-unstable.url = "github:numtide/nixpkgs-unfree/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
