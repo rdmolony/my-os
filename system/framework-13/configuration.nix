@@ -49,6 +49,9 @@
     enable32Bit = true;
   };
 
+  # Enable game controller udev rules (useful for Parsec + PS3 controller)
+  hardware.steam-hardware.enable = true;
+
   # Enable the Desktop Environment.
   services = {
     desktopManager.cosmic.enable = true;
@@ -93,7 +96,7 @@
     isNormalUser = true;
     shell = pkgs.zsh;
     description = "Rowan Molony";
-    extraGroups = [ "networkmanager" "wheel" "docker" "nordvpn" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" "nordvpn" "input" ];
     packages = with pkgs; [
     ];
   };
