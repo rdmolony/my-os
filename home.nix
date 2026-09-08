@@ -116,6 +116,7 @@ in
         theme = "robbyrussell";
       };
       shellAliases = {
+        pi = "nix run github:lukasl-dev/pi.nix --accept-flake-config";
         ll = "ls -l";
         gi = ''
           git init && \
